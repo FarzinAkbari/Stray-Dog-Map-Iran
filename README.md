@@ -27,11 +27,53 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-Run the application script to input dog locations and generate a map:
+1. Run the application script to input dog locations and generate a map:
 
 ```bash
-   python scripts/app.py
+   python main.py
 ```
+2. Input new locations and generate the map: Follow the instructions within the app to input data about stray dogs and view the interactive map.
+
+## Project Structure
+
+The project follows the MVC (Model-View-Controller) design pattern, making it modular and easy to manage.
+```
+Stray-Dog-Map-Iran/
+├── controllers/
+│   ├── __init__.py
+│   └── main_controller.py
+├── models/
+│   ├── __init__.py
+│   └── dog_model.py
+├── views/
+│   ├── __init__.py
+│   └── main_view.py
+├── main.py
+├── requirements.txt
+└── README.md
+
+```
+- controllers/: Contains the controller logic.
+
+    - `main_controller.py`: Handles the interaction between the model and the view.
+
+- models/: Contains the data models.
+
+    - `dog_model.py`: Manages the data related to the dogs.
+
+- views/: Contains the UI components.
+
+    - `main_view.py`: Manages the user interface and interactions.
+
+- [main.py](main.py): The entry point of the application.
+
+- [requirements.txt](requirements): Lists the dependencies needed to run the application.
+
+- [README.md](README.md): Provides information about the project.
+
+## Contributions
+Contributions are welcome! Please read the Contributing Guide for more details.
+
 ## License
 This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
 
@@ -42,4 +84,6 @@ To support this project and help us expand our efforts, consider making a donati
 
 This project is dedicated to supporting stray dogs facing difficult circumstances. Our mission is to advocate for animal welfare and nature conservation worldwide. By raising awareness and providing tools for the public to report and track stray dogs, we strive to create a positive impact on both animals and the environment.
 
+## Contact 
 
+For more information or to get involved, please contact farzin7akbari@gmail.com
