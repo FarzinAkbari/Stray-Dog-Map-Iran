@@ -1,0 +1,23 @@
+<MainView>:
+    md_bg_color: 0, 0, 0, 1
+    MDTopAppBar:
+        title: "Stray Dog Map Iran"
+        md_bg_color: 0, 0, 0, 1
+    MDRaisedButton:
+        text: "Profile"
+        pos_hint: {"center_x": 0.9, "center_y": 0.95}
+        md_bg_color: 1, 1, 0, 0.8  # ترکیبی از رنگ زرد ملایم
+        on_press: app.root.current = 'profile'
+    MDLabel:
+        text: "Map will be here"
+        halign: "center"
+        theme_text_color: "Custom"
+        text_color: 1, 1, 0, 0.8  # رنگ زرد ملایم
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+    MDRaisedButton:
+        text: "Report a Dog"
+        pos_hint: {"center_x": 0.5, "center_y": 0.1}
+        md_bg_color: 1, 1, 0, 0.8  # ترکیبی از رنگ زرد ملایم
+        on_press: root.report_dog()
+
+

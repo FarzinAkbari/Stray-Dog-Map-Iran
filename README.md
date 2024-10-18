@@ -47,7 +47,10 @@ Stray-Dog-Map-Iran/
 │   └── dog_model.py
 ├── views/
 │   ├── __init__.py
-│   └── main_view.py
+│   ├── main_view.py
+│   ├── profile_view.py
+│   ├── main_view.kv
+│   └── profile_view.kv
 ├── main.py
 ├── requirements.txt
 └── README.md

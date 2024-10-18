@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_94308282b5b1da8b6960de7a6c3c7e74 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_94308282b5b1da8b6960de7a6c3c7e74" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_94308282b5b1da8b6960de7a6c3c7e74 = L.map(
+                "map_94308282b5b1da8b6960de7a6c3c7e74",
+                {
+                    center: [35.6892, 51.389],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_40d109b03df1f799a0e4959c669c1469 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_40d109b03df1f799a0e4959c669c1469.addTo(map_94308282b5b1da8b6960de7a6c3c7e74);
+        
+    
+            var marker_69d569dc61228e6146d30674ba3132d5 = L.marker(
+                [35.6892, 51.389],
+                {}
+            ).addTo(map_94308282b5b1da8b6960de7a6c3c7e74);
+        
+    
+        var popup_cd4984c68d615429411c4929cd6d3ecc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6497d858caada5e3ee4bc6584bb1532f = $(`<div id="html_6497d858caada5e3ee4bc6584bb1532f" style="width: 100.0%; height: 100.0%;">Name: Buddy, Description: Friendly dog</div>`)[0];
+                popup_cd4984c68d615429411c4929cd6d3ecc.setContent(html_6497d858caada5e3ee4bc6584bb1532f);
+            
+        
+
+        marker_69d569dc61228e6146d30674ba3132d5.bindPopup(popup_cd4984c68d615429411c4929cd6d3ecc)
+        ;
+
+        
+    
+    
+            var marker_c37d50e50587a8c8e999b6e3cde53d1f = L.marker(
+                [35.6892, 51.389],
+                {}
+            ).addTo(map_94308282b5b1da8b6960de7a6c3c7e74);
+        
+    
+        var popup_122359e5f00fbc394df9c35799c12263 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35a60b013e3e60ddf23380aeb439e38b = $(`<div id="html_35a60b013e3e60ddf23380aeb439e38b" style="width: 100.0%; height: 100.0%;">Name: Buddy, Description: Friendly dog</div>`)[0];
+                popup_122359e5f00fbc394df9c35799c12263.setContent(html_35a60b013e3e60ddf23380aeb439e38b);
+            
+        
+
+        marker_c37d50e50587a8c8e999b6e3cde53d1f.bindPopup(popup_122359e5f00fbc394df9c35799c12263)
+        ;
+
+        
+    
+    
+            var marker_d05ce83fc6986e8b8a748977f82bb9f6 = L.marker(
+                [35.6892, 51.389],
+                {}
+            ).addTo(map_94308282b5b1da8b6960de7a6c3c7e74);
+        
+    
+        var popup_f8a65f88a317c7d3e8cca9c23fd3daba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c0939acaa3b104ecff4ab0a7a5f8935 = $(`<div id="html_9c0939acaa3b104ecff4ab0a7a5f8935" style="width: 100.0%; height: 100.0%;">Name: Buddy, Description: Friendly dog</div>`)[0];
+                popup_f8a65f88a317c7d3e8cca9c23fd3daba.setContent(html_9c0939acaa3b104ecff4ab0a7a5f8935);
+            
+        
+
+        marker_d05ce83fc6986e8b8a748977f82bb9f6.bindPopup(popup_f8a65f88a317c7d3e8cca9c23fd3daba)
+        ;
+
+        
+    
+    
+            var marker_90952e13e267bbba1aebbb4aee5a433a = L.marker(
+                [35.6892, 51.389],
+                {}
+            ).addTo(map_94308282b5b1da8b6960de7a6c3c7e74);
+        
+    
+        var popup_db7a0afaeb725ec2ee5ffef9466b0b77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42282645279c69431c4c703937ff6d7f = $(`<div id="html_42282645279c69431c4c703937ff6d7f" style="width: 100.0%; height: 100.0%;">Name: Buddy, Description: Friendly dog</div>`)[0];
+                popup_db7a0afaeb725ec2ee5ffef9466b0b77.setContent(html_42282645279c69431c4c703937ff6d7f);
+            
+        
+
+        marker_90952e13e267bbba1aebbb4aee5a433a.bindPopup(popup_db7a0afaeb725ec2ee5ffef9466b0b77)
+        ;
+
+        
+    
+    
+            var marker_cd271e1a0b102d6fdcbea312dfdf2f66 = L.marker(
+                [35.6892, 51.389],
+                {}
+            ).addTo(map_94308282b5b1da8b6960de7a6c3c7e74);
+        
+    
+        var popup_8fd15b5a4e31e275b1d51ea498ae8522 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3fb07d646eb41c1304f04b4842d0faa = $(`<div id="html_e3fb07d646eb41c1304f04b4842d0faa" style="width: 100.0%; height: 100.0%;">Name: Buddy, Description: Friendly dog</div>`)[0];
+                popup_8fd15b5a4e31e275b1d51ea498ae8522.setContent(html_e3fb07d646eb41c1304f04b4842d0faa);
+            
+        
+
+        marker_cd271e1a0b102d6fdcbea312dfdf2f66.bindPopup(popup_8fd15b5a4e31e275b1d51ea498ae8522)
+        ;
+
+        
+    
+    
+            var marker_6e62b4ddd0751eaa6029174fe9542ce2 = L.marker(
+                [35.6892, 51.389],
+                {}
+            ).addTo(map_94308282b5b1da8b6960de7a6c3c7e74);
+        
+    
+        var popup_73322e8a47021e0ebbc94dab33fb7540 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1534805e5eeec15eb0abb401536e928 = $(`<div id="html_e1534805e5eeec15eb0abb401536e928" style="width: 100.0%; height: 100.0%;">Name: Buddy, Description: Friendly dog</div>`)[0];
+                popup_73322e8a47021e0ebbc94dab33fb7540.setContent(html_e1534805e5eeec15eb0abb401536e928);
+            
+        
+
+        marker_6e62b4ddd0751eaa6029174fe9542ce2.bindPopup(popup_73322e8a47021e0ebbc94dab33fb7540)
+        ;
+
+        
+    
+    
+            var marker_ea2c83f134b52bddc009b6c8ef7c8e89 = L.marker(
+                [35.6892, 51.389],
+                {}
+            ).addTo(map_94308282b5b1da8b6960de7a6c3c7e74);
+        
+    
+        var popup_6ae15ca965955b8ba8fdc2e2adda66a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c61d4c50e60c42e4dd048020b5acd168 = $(`<div id="html_c61d4c50e60c42e4dd048020b5acd168" style="width: 100.0%; height: 100.0%;">Name: Buddy, Description: Friendly dog</div>`)[0];
+                popup_6ae15ca965955b8ba8fdc2e2adda66a4.setContent(html_c61d4c50e60c42e4dd048020b5acd168);
+            
+        
+
+        marker_ea2c83f134b52bddc009b6c8ef7c8e89.bindPopup(popup_6ae15ca965955b8ba8fdc2e2adda66a4)
+        ;
+
+        
+    
+    
+            var marker_11cbcdd609890e521618370001b75a8b = L.marker(
+                [35.6892, 51.389],
+                {}
+            ).addTo(map_94308282b5b1da8b6960de7a6c3c7e74);
+        
+    
+        var popup_012633334e0d31521f48f7775cae38e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_338fc73884cc706730b7eef4dea8e65c = $(`<div id="html_338fc73884cc706730b7eef4dea8e65c" style="width: 100.0%; height: 100.0%;">Name: Buddy, Description: Friendly dog</div>`)[0];
+                popup_012633334e0d31521f48f7775cae38e4.setContent(html_338fc73884cc706730b7eef4dea8e65c);
+            
+        
+
+        marker_11cbcdd609890e521618370001b75a8b.bindPopup(popup_012633334e0d31521f48f7775cae38e4)
+        ;
+
+        
+    
+    
+            var marker_da952dd4463561ba09ffb2549e7ba1c0 = L.marker(
+                [35.6892, 51.389],
+                {}
+            ).addTo(map_94308282b5b1da8b6960de7a6c3c7e74);
+        
+    
+        var popup_92034095e72e7da7ce2b79f2646ac921 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7be43b512506386fa8d250d81c34c6b9 = $(`<div id="html_7be43b512506386fa8d250d81c34c6b9" style="width: 100.0%; height: 100.0%;">Name: Buddy, Description: Friendly dog</div>`)[0];
+                popup_92034095e72e7da7ce2b79f2646ac921.setContent(html_7be43b512506386fa8d250d81c34c6b9);
+            
+        
+
+        marker_da952dd4463561ba09ffb2549e7ba1c0.bindPopup(popup_92034095e72e7da7ce2b79f2646ac921)
+        ;
+
+        
+    
+    
+            var marker_0509c57f719aa18b0af8d19e4375a043 = L.marker(
+                [35.6892, 51.389],
+                {}
+            ).addTo(map_94308282b5b1da8b6960de7a6c3c7e74);
+        
+    
+        var popup_eb32dd0f9d9fb1e375171fc9aef96784 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7553f06e01c3ca5978069c29e1729009 = $(`<div id="html_7553f06e01c3ca5978069c29e1729009" style="width: 100.0%; height: 100.0%;">Name: Buddy, Description: Friendly dog</div>`)[0];
+                popup_eb32dd0f9d9fb1e375171fc9aef96784.setContent(html_7553f06e01c3ca5978069c29e1729009);
+            
+        
+
+        marker_0509c57f719aa18b0af8d19e4375a043.bindPopup(popup_eb32dd0f9d9fb1e375171fc9aef96784)
+        ;
+
+        
+    
+</script>
+</html>
