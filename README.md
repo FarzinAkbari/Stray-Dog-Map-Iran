@@ -67,7 +67,7 @@ Stray-Dog-Map-Iran/
 
 - [main.py](main.py): The entry point of the application.
 
-- [requirements.txt](requirements): Lists the dependencies needed to run the application.
+- [requirements.txt](requirements.txt): Lists the dependencies needed to run the application.
 
 - [README.md](README.md): Provides information about the project.
 
