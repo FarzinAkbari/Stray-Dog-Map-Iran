@@ -1,2 +1,9 @@
+<<<<<<< HEAD
 pandas
 nfolium
+=======
+pandas\nfolium
+kivy
+kivymd
+
+>>>>>>> dbc395c (Initial commit with MVC structure and KivyMD integration)
