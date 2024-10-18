@@ -1,6 +1,12 @@
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivymd.app import MDApp
+import sys
+import os
+
+# اضافه کردن پوشه پروژه به مسیر پایتون
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 
 class MainView(BoxLayout):
     def __init__(self, controller, **kwargs):
