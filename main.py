@@ -1,6 +1,7 @@
 from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
 from kivy_garden.mapview import MapView, MapMarker
+from kivy.animation import Animation
 from kivymd.app import MDApp
 from kivymd.uix.toolbar import MDToolbar
 from kivymd.uix.button import MDFloatingActionButton
@@ -28,7 +29,7 @@ class MainView(Screen):
 
         fab = MDFloatingActionButton(icon="plus", md_bg_color=(1, 1, 0, 1))
         fab.pos_hint = {"center_x": 0.5, "center_y": 0.1}
-        fab.bind(on_press=self.report_dog)
+        fab.bind(on_press=self.animate_fab)
 
         layout.add_widget(fab)
         self.add_widget(layout)
@@ -42,6 +43,11 @@ class MainView(Screen):
 
     def report_dog(self, instance):
         print("Report a Dog functionality triggered!")
+
+    def animate_fab(self, instance):
+        animation = Animation(size=(80, 80), duration=0.2) + Animation(size=(56, 56), duration=0.2)
+        animation.start(instance)
+        self.report_dog(instance)
 
 class ProfileView(Screen):
     def __init__(self, **kwargs):
