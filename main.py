@@ -1,4 +1,3 @@
-
 from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
 from kivy_garden.mapview import MapView, MapMarker
@@ -19,7 +18,8 @@ class MainView(Screen):
         toolbar = MDToolbar(title="Stray Dog Map Iran")
         toolbar.md_bg_color = 0, 0, 0, 1
         toolbar.specific_text_color = 1, 1, 0, 1
-        toolbar.right_action_items = [["account", lambda x: self.change_to_profile()]]
+        toolbar.right_action_items = [["account", lambda x: self.change_to_profile()],
+                                      ["theme-light-dark", lambda x: MDApp.get_running_app().toggle_theme()]]
 
         layout.add_widget(toolbar)
 
@@ -77,6 +77,12 @@ class MainApp(MDApp):
 
     def on_start(self):
         self.screen_manager.get_screen('main').on_enter()
+
+    def toggle_theme(self):
+        if self.theme_cls.theme_style == "Light":
+            self.theme_cls.theme_style = "Dark"
+        else:
+            self.theme_cls.theme_style = "Light"
 
 if __name__ == '__main__':
     MainApp().run()
