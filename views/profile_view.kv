@@ -1,18 +1,22 @@
+#:import MDLabel kivymd.uix.label.MDLabel
+#:import MDFloatingActionButton kivymd.uix.button.MDFloatingActionButton
+#:import MDToolbar kivymd.uix.toolbar.MDToolbar
+
 <ProfileView>:
     md_bg_color: 0, 0, 0, 1
-    MDTopAppBar:
-        title: "Profile"
-        md_bg_color: 0, 0, 0, 1
-    MDLabel:
-        text: "User Profile"
-        halign: "center"
-        theme_text_color: "Custom"
-        text_color: 1, 1, 0, 0.8  # رنگ زرد ملایم
-        pos_hint: {"center_x": 0.5, "center_y": 0.5}
-    MDRaisedButton:
-        text: "Back to Main"
-        pos_hint: {"center_x": 0.5, "center_y": 0.1}
-        md_bg_color: 1, 1, 0, 0.8  # ترکیبی از رنگ زرد ملایم
-        on_press: app.root.current = 'main'
 
+    MDBoxLayout:
+        orientation: "vertical"
 
+        MDToolbar:
+            title: "Profile"
+            md_bg_color: 0, 0, 0, 1
+            specific_text_color: 1, 1, 0, 1
+            left_action_items: [["arrow-left", lambda x: app.root.current = 'main']]
+
+        MDLabel:
+            text: "User Profile"
+            halign: "center"
+            theme_text_color: "Custom"
+            text_color: 1, 1, 0, 0.8
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
